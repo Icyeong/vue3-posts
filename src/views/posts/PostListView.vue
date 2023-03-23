@@ -30,14 +30,19 @@ const posts = ref([]);
 
 const router = useRouter();
 
-const fetchPosts = () => {
-  posts.value = getPosts();
+const fetchPosts = async () => {
+  try {
+    const { data } = await getPosts();
+    posts.value = data;
+  } catch (err) {
+    console.error(err);
+  }
 };
+fetchPosts();
 
 const goPage = id => {
   router.push({ name: 'PostDetail', params: { id } });
 };
-fetchPosts();
 </script>
 
 <style lang="scss" scoped></style>
