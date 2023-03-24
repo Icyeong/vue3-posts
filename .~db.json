@@ -2,8 +2,8 @@
   "posts": [
     {
       "id": 1,
-      "title": "제목1",
-      "content": "내용1",
+      "title": "제목1sdd",
+      "content": "내용1zzfff",
       "createdAt": "2023-03-21"
     },
     {
@@ -45,20 +45,25 @@
     {
       "id": 8,
       "title": "제목8",
-      "content": "내용8",
+      "content": "내용8fdgfdg",
       "createdAt": "2023-03-28"
     },
     {
-      "id": 9,
-      "title": "제목9",
-      "content": "내용9",
-      "createdAt": "2023-03-29"
+      "title": null,
+      "content": "sadsad",
+      "id": 9
     },
     {
-      "title": "ggg",
-      "content": "gggg",
-      "createdAt": "2023-03-23",
+      "title": "제목제목",
+      "content": "내용내용",
+      "createdAt": "2023-03-24",
       "id": 10
+    },
+    {
+      "title": "fff",
+      "content": "fff",
+      "createdAt": "2023-03-24",
+      "id": 11
     }
   ]
 }
