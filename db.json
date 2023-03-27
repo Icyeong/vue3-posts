@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": 1,
-      "title": "제목1sdd",
+      "title": "제목1sddss",
       "content": "내용1zzfff",
       "createdAt": 1652668055115
     },
@@ -37,12 +37,6 @@
       "createdAt": 1651668055115
     },
     {
-      "id": 7,
-      "title": "제목7",
-      "content": "내용7",
-      "createdAt": 1652668058115
-    },
-    {
       "id": 8,
       "title": "제목8",
       "content": "내용8fdgfdg",
@@ -60,7 +54,7 @@
       "id": 10
     },
     {
-      "title": "fff",
+      "title": "ㅋㅋㅋㅋ5ㅁ",
       "content": "fff",
       "createdAt": 16526680565115,
       "id": 11
@@ -76,6 +70,30 @@
       "content": "fsfd",
       "createdAt": "2023-03-27T05:03:50.230Z",
       "id": 13
+    },
+    {
+      "title": "게시글 등록을  ㄹ",
+      "content": "하겠습니다.....",
+      "createdAt": "2023-03-27T05:21:32.324Z",
+      "id": 14
+    },
+    {
+      "title": "ㄴㄴ",
+      "content": "ㅋㅋ",
+      "createdAt": "2023-03-27T05:34:25.953Z",
+      "id": 15
+    },
+    {
+      "title": "ㅇ",
+      "content": null,
+      "createdAt": "2023-03-27T05:48:08.248Z",
+      "id": 16
+    },
+    {
+      "title": "ㄴㄴ",
+      "content": null,
+      "createdAt": "2023-03-27T05:48:22.900Z",
+      "id": 17
     }
   ]
 }

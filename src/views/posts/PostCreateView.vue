@@ -2,6 +2,7 @@
   <div>
     <h2>게시글 등록</h2>
     <hr class="my-4" />
+    <AppError v-if="error" :message="error.message" />
     <PostForm
       v-model:title="form.title"
       v-model:content="form.content"
@@ -12,6 +13,18 @@
           목록
         </button>
         <button class="btn btn-primary">저장</button>
+
+        <button class="btn btn-primary" :disabled="loading">
+          <template v-if="loading">
+            <span
+              class="spinner-grow spinner-grow-sm"
+              role="status"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Loading...</span>
+          </template>
+          <template v-else>저장</template>
+        </button>
       </template>
     </PostForm>
   </div>
@@ -31,9 +44,12 @@ const form = ref({
   title: null,
   content: null,
 });
-const save = () => {
+const loading = ref(false);
+const error = ref(null);
+const save = async () => {
   try {
-    createPost({
+    loading.value = true;
+    await createPost({
       ...form.value,
       createdAt: new Date(),
       // createdAt: new Date().toISOString().split('T')[0],
@@ -42,6 +58,9 @@ const save = () => {
     vSuccess('등록이 완료되었습니다.');
   } catch (err) {
     vAlert(err.message);
+    error.value = err;
+  } finally {
+    loading.value = false;
   }
 };
 const goListPage = () => router.push({ name: 'PostList' });
