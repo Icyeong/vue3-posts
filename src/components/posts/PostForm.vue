@@ -3,12 +3,14 @@
     <div class="mb-3">
       <label for="title" class="form-label">제목</label>
       <input
+        v-focus
+        v-color="'red'"
         :value="title"
         @input="$emit('update:title', $event.target.value)"
         type="text"
         class="form-control"
         id="title"
-        placeholder="name@example.com"
+        placeholder="게시글 제목을 입력해주세요"
       />
     </div>
     <div class="mb-3">
@@ -28,6 +30,11 @@
 </template>
 
 <script setup>
+// const vFocus = {
+//   mounted: el => {
+//     el.focus();
+//   },
+// };
 defineProps({
   title: String,
   content: String,

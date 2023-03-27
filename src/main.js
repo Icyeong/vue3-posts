@@ -3,11 +3,15 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
-import globalComponents from './plugins/global-components';
+import globalDirectives from './plugins/global-directives';
+// import globalComponents from './plugins/global-components';
+// import focus from './directives/focus';
 
 const app = createApp(App);
-app.use(globalComponents);
+// app.use(globalComponents);
+// app.directive('focus', focus);
 app.use(router);
+app.use(globalDirectives);
 app.mount('#app');
 import 'bootstrap/dist/js/bootstrap.js';
 
